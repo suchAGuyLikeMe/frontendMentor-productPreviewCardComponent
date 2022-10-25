@@ -33,9 +33,7 @@ body{
 /*<main class="card">*/
 .card{
     background: var(--neutralWhite);
-    width: 90%;
-    max-width: 600px;
-    border: 1px solid black;
+    max-width: 80%;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -43,21 +41,17 @@ body{
 }
 
 /*<section class ="imgSection">*/
-section{
-    margin: 0;
-}
 .perfumeImg{
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
-
 /*<section class="textSection"*/
 .textSection{
     padding: 1.1rem;
 }
 
 .perfume{
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
 }
 
 .perfume, .chanel{
@@ -69,7 +63,7 @@ section{
 }
 
 .productName{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: var(--weight700);
     margin-left: 3px;
 }
@@ -87,9 +81,7 @@ section{
 }
 
 .productDescription{
-    white-space: pre-line;
     line-height: 1.2rem
-
 }
 .prices{
     display: flex;
@@ -130,14 +122,23 @@ ul{
     font-weight: var(--weight700);
 }
 
+.btn:hover,
+.btn:focus{
+    background: opacity(0.25);
+}
+
 @media (min-width: 600px){
     .card{
-        flex-direction: row;
+        flex-direction: row; 
     }
 
     .perfumeImg{
         content: url("../img/image-product-desktop.jpg");
         height: 100%;
+    }
+    
+    .imgSection, .textSection{
+        width: 238px;
     }
 }
 
