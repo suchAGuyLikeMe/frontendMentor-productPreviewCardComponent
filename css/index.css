@@ -10,7 +10,7 @@
     
     /*font size, fonts and weights*/
 
-    --fontSize: 14px;
+    --fontSize: 0.875rem;
     --fontOne: "Montserrat", sans-sarif;
     --fontTwo: "Fraunces", sans-sarif;
     --weight500: 500;
@@ -33,8 +33,9 @@ body{
 /*<main class="card">*/
 .card{
     background: var(--neutralWhite);
-    max-width: 80%;
-    border-radius: 10px;
+    width: 80%;
+    max-width: 37.5rem;
+    border-radius: 0.625rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -51,7 +52,7 @@ body{
 }
 
 .perfume{
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
 }
 
 .perfume, .chanel{
@@ -104,32 +105,32 @@ ul{
 }
 
 /*<section class="btn">*/
-.btn{
-    background: var(--primaryDarkCyan);
-    text-align: center;
-    padding: 12px;
-    border-radius: 10px;
-}
-
 .cartImg{
     vertical-align: sub;
     margin-right:5px;
 }
 
 .purchaseLink{
+    display: block;
+    background: var(--primaryDarkCyan);
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 0.625rem;
     text-decoration: none;
     color: var(--neutralWhite);
     font-weight: var(--weight700);
 }
 
-.btn:hover,
-.btn:focus{
-    background: opacity(0.25);
+.purchaseLink:hover,
+.purchaseLink:focus{
+    background: hsl(158, 71%, 13%);
+    transition: 1s;
 }
 
-@media (min-width: 600px){
+@media (min-width: 500px){
     .card{
         flex-direction: row; 
+        width: auto;
     }
 
     .perfumeImg{
