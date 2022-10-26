@@ -123,8 +123,7 @@ body{
     font-weight: var(--weight700);
 }
 
-.purchaseLink:hover,
-.purchaseLink:focus{
+.purchaseLink:hover{
     background: hsl(158, 71%, 13%);
     transition: 1s;
 }
@@ -136,7 +135,6 @@ body{
     }
 
     .perfumeImg{
-        content: url("../img/image-product-desktop.jpg");
         height: 100%;
     }
     

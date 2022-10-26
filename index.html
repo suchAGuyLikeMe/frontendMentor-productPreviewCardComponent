@@ -14,7 +14,10 @@
 <body>
     <main class="card">
         <div class="imgSection">
-            <img src="img/image-product-mobile.jpg" alt="perfume" class="perfumeImg">
+            <picture>
+                <source media="(min-width: 480px)" srcset="img/image-product-desktop.jpg">
+                <img src="img/image-product-mobile.jpg" alt="perfume" class="perfumeImg">
+            </picture>
         </div>
         <section class="textSection">
             <p class="perfume">Perfume</p>
@@ -30,7 +33,6 @@
             <a href="#" class="purchaseLink">
                 <img src="img/icon-cart.svg" alt="cart" class="cartImg"> Add to Cart
             </a>
-
         </section>
     </main>
 </body>
