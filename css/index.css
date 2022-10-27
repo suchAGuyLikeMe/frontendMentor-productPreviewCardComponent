@@ -50,7 +50,7 @@ body{
 }
 
 .perfume{
-    letter-spacing: 2.4px;
+    letter-spacing: 4.5px;
 }
 
 .perfume, .chanel{
@@ -75,7 +75,11 @@ body{
     font-family: var(--fontTwo);
 }
 
-.perfume, .productDescription, .purchaseLink, .ogPrice{
+.perfume{
+    font-size: 0.66rem;
+}
+
+.productDescription, .purchaseLink, .ogPrice{
     font-size: var(--fontSize);
 }
 
